@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sat Mar 10 19:17:40 2018
-
-@author: ES1-331-P4HD
-"""
-from itertools import permutations
 import random
 def insertionsort(A):
     #we start loop at second element (index 1) since the first item is already sorted
@@ -24,11 +17,10 @@ def insertionsort(A):
     print ("swaps"),swap ,("looks"), look
     return A
     
-    
 n= input()
 s= random.sample(range(100), n)
 s = list (s)
-x= list(itertools.permutations(s, n))
+x= list (permutations(s, n))
 f=n
 fac=1
 while f > 0:
@@ -39,9 +31,4 @@ for i in range (0,fac):
     t = list (x[i])
     insertionsort(t)
     print(t)
-    print ("\n")
-
-
-
-    
-               
+    print ("\n")   
